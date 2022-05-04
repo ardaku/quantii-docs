@@ -1,0 +1,6 @@
+[book]
+authors = ["Jeron Aldaron Lau", "Jason Qin"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Quantii"
