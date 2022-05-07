@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>What is Quantii? - Quantii</title>
+        <title>Drivers - Quantii</title>
         
         
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="ch0-0.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch0-1.html" class="active"><strong aria-hidden="true">1.1.</strong> What is Quantii?</a></li><li class="chapter-item expanded "><a href="ch0-2.html"><strong aria-hidden="true">1.2.</strong> Quantii's Goals</a></li></ol></li><li class="chapter-item expanded "><a href="ch1-0.html"><strong aria-hidden="true">2.</strong> Installing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch1-1.html"><strong aria-hidden="true">2.1.</strong> QEMU</a></li><li class="chapter-item expanded "><a href="ch1-2.html"><strong aria-hidden="true">2.2.</strong> Raspberry Pi</a></li><li class="chapter-item expanded "><a href="ch1-3.html"><strong aria-hidden="true">2.3.</strong> VisionFive</a></li><li class="chapter-item expanded "><a href="ch1-4.html"><strong aria-hidden="true">2.4.</strong> Sipeed LicheeRV</a></li></ol></li><li class="chapter-item expanded "><a href="ch2-0.html"><strong aria-hidden="true">3.</strong> Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch2-1.html"><strong aria-hidden="true">3.1.</strong> Drivers</a></li><li class="chapter-item expanded "><a href="ch2-2.html"><strong aria-hidden="true">3.2.</strong> Quantii API</a></li><li class="chapter-item expanded "><a href="ch2-3.html"><strong aria-hidden="true">3.3.</strong> Daku API</a></li><li class="chapter-item expanded "><a href="ch2-4.html"><strong aria-hidden="true">3.4.</strong> Ardaku</a></li></ol></li><li class="chapter-item expanded "><a href="ch3-0.html"><strong aria-hidden="true">4.</strong> Neutron Integration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch3-1.html"><strong aria-hidden="true">4.1.</strong> NeutronFS</a></li><li class="chapter-item expanded "><a href="ch3-2.html"><strong aria-hidden="true">4.2.</strong> Qiish</a></li></ol></li><li class="chapter-item expanded "><a href="ch4-0.html"><strong aria-hidden="true">5.</strong> Novusk Integration</a></li><li class="chapter-item expanded "><a href="ch5-0.html"><strong aria-hidden="true">6.</strong> Side/Related Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch5-1.html"><strong aria-hidden="true">6.1.</strong> Sprengui</a></li><li class="chapter-item expanded "><a href="ch5-2.html"><strong aria-hidden="true">6.2.</strong> Cala</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="ch0-0.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch0-1.html"><strong aria-hidden="true">1.1.</strong> What is Quantii?</a></li><li class="chapter-item expanded "><a href="ch0-2.html"><strong aria-hidden="true">1.2.</strong> Quantii's Goals</a></li></ol></li><li class="chapter-item expanded "><a href="ch1-0.html"><strong aria-hidden="true">2.</strong> Installing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch1-1.html"><strong aria-hidden="true">2.1.</strong> QEMU</a></li><li class="chapter-item expanded "><a href="ch1-2.html"><strong aria-hidden="true">2.2.</strong> Raspberry Pi</a></li><li class="chapter-item expanded "><a href="ch1-3.html"><strong aria-hidden="true">2.3.</strong> VisionFive</a></li><li class="chapter-item expanded "><a href="ch1-4.html"><strong aria-hidden="true">2.4.</strong> Sipeed LicheeRV</a></li></ol></li><li class="chapter-item expanded "><a href="ch2-0.html"><strong aria-hidden="true">3.</strong> Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch2-1.html" class="active"><strong aria-hidden="true">3.1.</strong> Drivers</a></li><li class="chapter-item expanded "><a href="ch2-2.html"><strong aria-hidden="true">3.2.</strong> Quantii API</a></li><li class="chapter-item expanded "><a href="ch2-3.html"><strong aria-hidden="true">3.3.</strong> Daku API</a></li><li class="chapter-item expanded "><a href="ch2-4.html"><strong aria-hidden="true">3.4.</strong> Ardaku</a></li></ol></li><li class="chapter-item expanded "><a href="ch3-0.html"><strong aria-hidden="true">4.</strong> Neutron Integration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch3-1.html"><strong aria-hidden="true">4.1.</strong> NeutronFS</a></li><li class="chapter-item expanded "><a href="ch3-2.html"><strong aria-hidden="true">4.2.</strong> Qiish</a></li></ol></li><li class="chapter-item expanded "><a href="ch4-0.html"><strong aria-hidden="true">5.</strong> Novusk Integration</a></li><li class="chapter-item expanded "><a href="ch5-0.html"><strong aria-hidden="true">6.</strong> Side/Related Projects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch5-1.html"><strong aria-hidden="true">6.1.</strong> Sprengui</a></li><li class="chapter-item expanded "><a href="ch5-2.html"><strong aria-hidden="true">6.2.</strong> Cala</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -165,18 +165,47 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="what-is-quantii"><a class="header" href="#what-is-quantii">What is Quantii?</a></h1>
-<p>Quantii is a general-purpose operating system written in Rust.  The intent of
-Quantii is to provide a secure and portable OS model based around WebAssembly.</p>
-<p>In order to support existing software, Quantii can run code compiled for wasi32.</p>
-<p>Inspired by web technologies like WebAssembly and WGPU, as well as a
-BSD-inspired syscall model, Quantii builds on modern trends in technology and
-takes them to the extreme to create the most frictionless, futuristic OS that
-will exist yet.</p>
-<p>Current Quantii targets:</p>
+                        <h1 id="drivers"><a class="header" href="#drivers">Drivers</a></h1>
+<p>These lists are non-exhaustive and likely to change drastically.</p>
+<h2 id="kernel-drivers"><a class="header" href="#kernel-drivers">Kernel Drivers</a></h2>
+<p>There should be as few kernel drivers as possible (to reduce the amount of
+unsandboxed drivers), and should be as close to the metal as they can (while
+still being portable).  Kernel drivers interface with userspace via the Quantii
+API.</p>
 <ul>
-<li>arm64 (Raspberry Pi 3/4)</li>
-<li>riscv64imac (VisionFive / Sipeed LicheeRV)</li>
+<li>USB</li>
+<li>Bluetooth</li>
+<li>Network</li>
+<li>Display</li>
+<li>Aux</li>
+<li>Touchscreen</li>
+<li>Power</li>
+<li>Haptic</li>
+<li>Accelerometer</li>
+<li>Gyro</li>
+<li>Broadband</li>
+<li>GPIO</li>
+<li>VFS (Virtual File System, or Filesystem-As-A-File)</li>
+<li>WGPU</li>
+<li>Built-in Camera</li>
+</ul>
+<h2 id="userspace-drivers--services"><a class="header" href="#userspace-drivers--services">Userspace Drivers / Services</a></h2>
+<p>Userspace drivers are drivers that run within the WebAssembly sandboxed
+environment.  Userspace drivers are the only services that can  access the
+Quantii API, so some just forward directly to the kernel driver.</p>
+<ul>
+<li>Keyboard (deps: USB, Bluetooth)</li>
+<li>Cursor (deps: USB, Touchscreen)</li>
+<li>Joystick (deps: USB, Bluetooth)</li>
+<li>Audio (deps: USB, Bluetooth, Aux)</li>
+<li>HTTP (deps: Network)</li>
+<li>TCP (deps: Network)</li>
+<li>UDP (deps: Network)</li>
+<li>Window (deps: Display, Keyboard, Cursor, WGPU)</li>
+<li>EmberFS (deps: VFS)</li>
+<li>WASI (deps: EmberFS, TCP, UDP)</li>
+<li>Transcoder (deps: WGPU)</li>
+<li>Camera (deps: Built-in Camera, USB, Transcoder)</li>
 </ul>
 
                     </main>
@@ -184,13 +213,13 @@ will exist yet.</p>
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="ch0-0.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="ch2-0.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="ch0-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="ch2-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -202,13 +231,13 @@ will exist yet.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="ch0-0.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="ch2-0.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="ch0-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="ch2-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
